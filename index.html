@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<head>
+<title>Jquery Website</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="index.css">
+
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+</head>
+<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top bg-nav"> <!-- Navigation starts Here -->
+			<div class="container-fluid for-navigation"> 
+				<div class="navbar-brand home-page navbar-left">Jquery-Website
+			</div>
+					<ul class="nav navbar-nav navbar-right">
+			    	<li><a href="#" class="profile">Profile </a></li>
+					<li><a href="#" class="feed"> Feed </a></li>
+				</ul>
+		</div>
+	</nav>   <!-- END OF NAVIGATION -->
+	
+	
+	<div class="container-fluid">      
+		<div class="row profile-image">
+			<div class="col-md-12">
+				<img class="rounded center-block img-circle">	
+			<h3 class="pic-caption text-center"></h3>
+			</div>
+			</div>
+		<div class="row navigation-tabs">    <!-- Navigation tabs starts -->
+		<div class="col-sm-12 col-md-12 center-block tabs">
+		<ul class="nav nav-pills nav-justified">
+			  <li class="intro" role="presentation"><a href="#basic-info">Basic-Info</a></li>
+			  <li class="work-ed" role="presentation"><a href="#work-info">Work and Education</a></li>
+			  <li class="family" role="presentation"><a href="#family-info">Family and Relationships</a></li>
+			  <li class="details" role="presentation"><a href="#details-info">About me</a></li>
+			  <li class="contact" role="presentation"><a href="#contact-info">Contact</a></li>
+
+				</ul>
+			</div>
+		</div>      <!-- Navigation tabs end here -->
+	</div>
+	
+				<div class="container-fluid all-info"> 
+
+				 	<div class ="row about-me-page" id="basic-info">   <!-- "About Me" starts here -->
+					<div class ="col-md-12">
+	 					<div class="page-header">
+  						<h2>Basic-Info</h2>
+					</div>
+						<form class="form-horizontal top-form">
+						<div class="form-group form"> 
+	 						<label for="input-firstname" class="col-sm-2 col-md-4">Firstname</label>
+	 					<div class="col-sm-10 col-md-8">
+	 						<input type="name" name="firstname" class="form-control" id="input-firstname">
+		 			</div>
+
+		 		</div>
+
+			 			<div class="form-group form"> 
+			 				<label for="input-lastname" class="col-sm-2 col-md-4">Lastname</label>
+			 			<div class="col-sm-10 col-md-8">
+			 				<input type="text" name="lastname" class="form-control" id="input-lastname">
+		 			</div>
+		 		</div>
+
+		 				<div class="form-group form"> 
+		 					<label for="input-birthday" class="col-sm-2 col-md-4">Date of birth</label>
+		 				<div class="col-sm-10 col-md-8">
+		 					<input type="text" name="birthday" class="form-control" id="input-birthday">
+		 			</div>
+		 		</div>
+
+	 				<div class="form-group form">
+	 						<label for="input-gender" class="col-sm-2 col-md-4">Gender</label>
+	 				<div class="col-sm-10 col-md-8">
+	 						<input type="text" name="gender" class="form-control" id="input-gender">
+	 			</div>
+	 		</div>
+
+	 				<div class="form-group form">
+	 				<label for="input-language" class="col-sm-2 col-md-4">Languages</label>
+	 				<div class="col-sm-10 col-md-8">
+	 				<input type="text" name="language" class="form-control" id="input-language">
+	 			</div>
+	 		</div>
+
+			 			<div class="form-group form">
+			 				<label for="input-hometown" class="col-sm-2 col-md-4">Hometown</label>
+			 			<div class="col-sm-10 col-md-8">
+			 				<input type="text" name="hometown" class="form-control" id="input-hometown">
+			 			</div>
+			 		</div>
+
+			 	</form>   
+	 
+			</div>
+		</div>      <!-- About me ends here -->
+
+			
+			<!-- Work & education starts here-->
+		
+						<div class ="row work-ed-page" id="work-info">  
+					 	<div class ="col-md-12">
+					 	<div class="page-header">
+  						<h2>Work and Education</h2>
+					</div>
+				 			<form class="form-horizontal top-form">
+				 			<div class="form-group form"> 
+				 				<label for="input-work" class="col-sm-2 col-md-4">Work</label>
+				 			<div class="col-sm-10 col-md-8">
+				 				<input type="text" name="work" class="form-control" id="input-work">
+				 		</div>
+				 	</div>
+
+			 			<div class="form-group form"> 
+			 				<label for="input-university" class="col-sm-2 col-md-4">University</label>
+			 			<div class="col-sm-10 col-md-8">
+			 				<input type="text" name="university" class="form-control" id="input-university">
+			 			</div>
+			 		</div>
+
+			 			<div class="form-group form">
+			 				<label for="input-school" class="col-sm-2 col-md-4">Highschool</label>
+			 			<div class="col-sm-10 col-md-8">
+			 				<input type="School" name="highschool" class="form-control" id="input-school">
+			 			</div>
+			 		</div>
+			 	</form>   
+			</div>
+		</div>       	<!-- Work & education ends here -->
+
+
+
+<!-- Family and Relationships starts here -->
+		
+				 <div class ="row family-page" id="family-info">  
+					 <div class ="col-md-12">
+					 	<div class="page-header">
+  						<h2>Family and Relationships</h2>
+					</div>
+				 		
+							<form class="form-horizontal top-form">
+				 			<div class="form-group form"> 
+				 				<label for="input-relationship" class="col-sm-2 col-md-4">RELATIONSHIP</label>
+				 			<div class="col-sm-10 col-md-8">
+				 				<input type="text" name="relationship" class="form-control" id="input-relationship">
+				 		</div>
+				 	</div>
+
+				 			<div class="form-group form"> 
+				 				<label for="input-relation" class="col-sm-2 col-md-4">FAMILY MEMBERS</label>
+				 			<div class="col-sm-10 col-md-8">
+				 				<input type="text" name="members" class="form-control" id="input-relation">
+				 			</div>
+				 		</div>
+					</form>   
+				</div>
+			</div>       <!-- Family & Relationship ends here -->
+
+
+						<div class ="row details-page" id="details-info">  <!-- Details-info starts here -->
+					 	<div class ="col-md-12">
+				 			<div class="page-header">
+  						<h2>About Me</h2>
+					</div>
+							<form class="form-horizontal top-form">
+				 			<div class="form-group form"> 
+				 				<label for="input-about" class="col-sm-2 col-md-4">About You</label>
+				 			<div class="col-sm-10 col-md-8">
+				 				<input type="text" name="about" class="form-control" id="input-about">
+				 		</div>
+				 	</div>
+
+				 			<div class="form-group form"> 
+				 				<label for="input-quotes" class="col-sm-2 col-md-4">Favourite Quotes</label>
+				 			<div class="col-sm-10 col-md-8">
+				 				<input type="text" name="quotes" class="form-control" id="input-quotes">
+				 		</div>
+				 	</div>
+				 </form>   
+			</div>
+		</div>   <!-- Details- Info ends here -->
+
+						 <div class ="row contact-page" id="contact-info">   <!-- "Contact" starts here -->
+									 <div class ="col-md-12">
+					 					<div class="page-header">
+  										<h2>Contact</h2>
+									</div>
+
+								<form class="form-horizontal top-form">
+								<div class="form-group form"> 
+					 				<label for="input-email" class="col-sm-2 col-md-4">Email</label>
+					 			<div class="col-sm-10 col-md-8">
+					 				<input type="text" name="Email" class="form-control" id="input-email">
+					 			</div>
+					 		</div>
+
+					 			<div class="form-group form"> 
+					 				<label for="input-website" class="col-sm-2 col-md-4">Website</label>
+					 			<div class="col-sm-10 col-md-8">
+					 				<input type="text" name="website" class="form-control" id="input-website">
+					 			</div>
+					 		</div>
+					 	</form>   
+					</div>
+				</div>   <!-- Contact ends here -->
+
+
+		 <!-- Container starts -->
+
+						 <div class="container-fluid"> <!-- Intro Page Starts-->
+							<div class="row start-page">
+							<div class="col-sm-12 col-md-12">
+								<h1 class="text-center"> Welcome ! </h3> 
+								<h3 class="text-muted text-center"> Use your Graph-API token !!</h5> 
+								<h2 class="text-muted text-center"> Click on <mark>Profile</mark> to view your basic details </h2>
+								<h2 class="text-muted text-center"> Click on <mark>Feed</mark> to get your recent 5 posts </h2>
+								<h3 class="text-muted text-center"> Enjoy !! </h3>
+
+							</div>
+						</div> 		<!-- Intro Page Ends-->
+					</div> 	<!-- Container Ends -->
+					</div>  <!-- All Basic info ends -->
+
+				<!-- FEED PROFILE PIC -->
+
+					<div class="container-fluid feed-profile-pic">
+					<div class="row">
+					<div class="col-sm-12 col-md-12">
+					<img class="squared center-block img-square">	
+					<h3 class="pic-caption text-center"></h3>
+				</div>
+			</div>
+			</div>
+
+				<!-- FEED Content starts -->
+					
+					<div class="jumbotron all-feed text-center">
+						<div class="container-fluid">
+							<div class="row"> <!-- Feed 1 starts -->
+							<div class="col-sm-12 col-md-12 main-feed1"> 
+								<h2 class="feed-story1"></h2>
+								<h4 class="time-stamp1"> </h4>
+								<h4 class="feed-type1"></h4>
+							</div>
+					
+						</div> <!-- Feed 1 ends -->
+
+							<div class="row"> <!-- Feed 2 starts -->
+							<div class="col-sm-12 col-md-12 main-feed2"> 
+								<hr>
+								<h2 class="feed-story2"></h2>
+								<h4 class="time-stamp2"> </h4>
+								<h4 class="feed-type2"></h4>
+								
+							</div>
+					</div>  <!-- Feed 2 ends -->
+
+						<div class="row"> <!-- Feed 3 starts -->
+							<div class="col-sm-12 col-md-12 main-feed3"> 
+								<hr>
+								<h2 class="feed-story3"></h2>
+								<h4 class="time-stamp3"> </h4>
+								<h4 class="feed-type3"></h4>
+								
+							</div>
+					</div>  <!-- Feed 3 ends -->
+
+						<div class="row"> <!-- Feed 4 starts -->
+							<div class="col-sm-12 col-md-12 main-feed4"> 
+							<hr>
+								<h2 class="feed-story4"></h2>
+								<h4 class="time-stamp4"> </h4>
+								<h4 class="feed-type4"></h4>
+								
+							</div>
+					</div>  <!-- Feed 4 ends -->
+
+						<div class="row"> <!-- Feed 5 starts -->
+							<div class="col-sm-12 col-md-12 main-feed5"> 
+								<hr>
+								<h2 class="feed-story5"></h2>
+								<h4 class="time-stamp5"> </h4>
+								<h4 class="feed-type5"></h4>
+							</div>
+					</div>  <!-- Feed 5 ends -->
+				</div>
+			</div>   <!-- jUMBOTRON ENDS -->
+
+					<script type="text/javascript" src="index.min.js"></script>
+					<script type="text/javascript" src="index.js"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+					</script>
+				</body>
+			</html>
