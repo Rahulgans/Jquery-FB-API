@@ -162,7 +162,9 @@ $.ajax("https://graph.facebook.com/me?fields=posts{created_time,type,full_pictur
 				$(".feed-story1").text(""+firstFeed[0].story+"");
 			}
 
-			$(".time-stamp1").text("Created at : "+firstFeed[0].created_time+"");
+			var date1 = new Date(firstFeed[0].created_time);
+			
+			$(".time-stamp1").text("Created at : "+date1.toDateString()+"");
 				$(".feed-type1").text("Type : "+firstFeed[0].type+"");
 
 			
@@ -202,7 +204,8 @@ $.ajax("https://graph.facebook.com/me?fields=posts{created_time,type,full_pictur
 					
 			}
 
-			$(".time-stamp2").text("Created at : "+secondFeed[0].created_time+"");
+			var date2 = new Date(secondFeed[0].created_time);
+			$(".time-stamp2").text("Created at : "+date2.toDateString()+"");
 				$(".feed-type2").text("Type : "+secondFeed[0].type+"");
 				console.log(secondFeed[0].type);
 
@@ -241,7 +244,9 @@ $.ajax("https://graph.facebook.com/me?fields=posts{created_time,type,full_pictur
 			
 			}
 
-			$(".time-stamp3").text("Created at : "+thirdFeed[0].created_time+"");
+			var date3 = new Date(thirdFeed[0].created_time);
+
+			$(".time-stamp3").text("Created at : "+date3.toDateString()+"");
 				$(".feed-type3").text("Type : "+thirdFeed[0].type+"");
 
 
@@ -281,7 +286,9 @@ $.ajax("https://graph.facebook.com/me?fields=posts{created_time,type,full_pictur
 			}
 
 
-			$(".time-stamp4").text("Created at : "+fourthFeed[0].created_time+"");
+			var date4 = new Date(fourthFeed[0].created_time);
+
+			$(".time-stamp4").text("Created at : "+date4.toDateString()+"");
 				$(".feed-type4").text("Type : "+fourthFeed[0].type+"");
 
 	// FIFTH FEED POST		
@@ -318,7 +325,9 @@ $.ajax("https://graph.facebook.com/me?fields=posts{created_time,type,full_pictur
 			}
 
 
-			$(".time-stamp5").text("Created at : "+fifthFeed[0].created_time+"");
+			var date5 = new Date (fifthFeed[0].created_time);
+
+			$(".time-stamp5").text("Created at : "+date5.toDateString()+"");
 				$(".feed-type5").text("Type : "+fifthFeed[0].type+"");
 			
 
