@@ -345,7 +345,8 @@ $.ajax("https://graph.facebook.com/me?fields=posts{created_time,type,full_pictur
 	
 	});  	//End of ajax call
 
-					  
+			 } // else ends
+});		  
 
 			$(".profile-image").hide();
 			$(".about-me-page").hide();
@@ -357,8 +358,7 @@ $.ajax("https://graph.facebook.com/me?fields=posts{created_time,type,full_pictur
 			 $(".all-feed").hide();
 			 $(".feed-profile-pic").hide();
 
-			 } // else ends
-});
+			
 
 		});         // Document .ready ends 
 
