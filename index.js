@@ -1,8 +1,17 @@
 $(document).ready(function(){
 	
-	var facebookToken = "";
+	var facebookToken;
 
 	// Ajax call for Profile
+	$("#loginBtn").click(function(){
+		facebookToken = $("#input-login ").val();
+		if(facebookToken.length < 10){
+			alert("Oops! Not a valid token");
+		}
+		else{
+
+			alert("Logged successfully! use Navigations for more!");
+	
 
 $.ajax("https://graph.facebook.com/me?fields=about,hometown,id,name,first_name,last_name,birthday,languages,gender,education,work,relationship_status,quotes,family,website,email,picture.width(150).height(150)&access_token="+facebookToken,{
 
@@ -111,6 +120,7 @@ $.ajax("https://graph.facebook.com/me?fields=about,hometown,id,name,first_name,l
         }
 			); //End of Ajax-call
 
+	
 
 
 // Ajax call for FEED
@@ -346,6 +356,9 @@ $.ajax("https://graph.facebook.com/me?fields=posts{created_time,type,full_pictur
 			$(".contact-page").hide();
 			 $(".all-feed").hide();
 			 $(".feed-profile-pic").hide();
+
+			 } // else ends
+});
 
 		});         // Document .ready ends 
 
