@@ -357,6 +357,7 @@ $.ajax("https://graph.facebook.com/me?fields=posts{created_time,type,full_pictur
 			$(".contact-page").hide();
 			 $(".all-feed").hide();
 			 $(".feed-profile-pic").hide();
+			 $(".start-page").show();
 
 			
 
