@@ -5,7 +5,7 @@ $(document).ready(function(){
 	// Ajax call for Profile
 	$("#loginBtn").click(function(){
 		facebookToken = $("#input-login ").val();
-		if(facebookToken.length < 10){
+		if(facebookToken.length < 25){
 			alert("Oops! Not a valid token");
 		}
 		else{
